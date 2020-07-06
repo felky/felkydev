@@ -113,4 +113,11 @@ h1, h2, h3, h4 {
     top: 0px;
     right: 0px; 
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding-top: 13rem;
+    }
+}
+
 `

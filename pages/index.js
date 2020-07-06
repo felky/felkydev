@@ -11,7 +11,7 @@ export default function Home() {
         <title>home@felkan</title>
       </Head>
       <main>
-        <img src="/face.png" alt="face of felkan" class="face"/>
+        <img src="/face.png" alt="face of felkan" className="face"/>
         <h1>felix gramell</h1>
         <Menu />
       </main>     

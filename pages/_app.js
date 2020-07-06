@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
       </Head>
 
-      <div class="layout">
+      <div className="layout">
             <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
                 <GlobalStyles />
             </ThemeProvider>
