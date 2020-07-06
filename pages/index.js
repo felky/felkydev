@@ -10,7 +10,6 @@ export default function Home() {
       <Head>
         <title>home@felkan</title>
       </Head>
-
       <main>
         <img src="/face.png" alt="face of felkan" class="face"/>
         <h1>felix gramell</h1>
