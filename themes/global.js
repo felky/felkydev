@@ -81,6 +81,11 @@ h1, h2, h3, h4 {
         "image text text";
 }
 
+.cardImg {
+    height: 170px;
+    border-radius: 70px;
+}
+
 .card img {
     padding-top: 1rem;
 }
@@ -118,6 +123,31 @@ h1, h2, h3, h4 {
     .container {
         padding-top: 13rem;
     }
+}
+
+@media screen and (max-width: 400px) {
+    a {
+        font-size: 12px;
+    }
+
+    .card {
+        grid-template-columns: 10rem 5rem 5rem;
+        grid-template-rows: 2rem 10rem;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .cardImg {
+        margin-top: 1rem;
+        height: 120px;
+        border-radius: 70px;
+    }
+
+    .container {
+        padding-top: 9rem;
+    }   
 }
 
 `
