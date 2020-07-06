@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Gallery({ image, title, text, link }) {
     return (
         <div className="card">

@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/Link'
-
 import './_app.js'
 
 export default function About() {

@@ -1,9 +1,6 @@
-//import '../styles/global_styles.scss'
 import Head from 'next/head'
 import Link from 'next/link'
-import Footer from '../components/footer'
 import { useDarkMode } from '../themes/darkMode';
-import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../themes/theme'
 import { GlobalStyles } from '../themes/global'

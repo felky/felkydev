@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/Link'
-import Gallery from  '../components/gallery'
+import Gallery from '../components/gallery'
 import './_app.js'
 
 export default function Work() {
