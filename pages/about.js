@@ -14,13 +14,9 @@ export default function About() {
       <main>
         <h1>about me</h1>
         <p>
-            i'm a 20 year old webdev from sweden
+            Swedish full-stack developer.
             <br/>
-            mechanical keyboard enthusiast 
-            <br/>
-            lover of the jamstack
-            <br/>
-            check out my <span><Link href="work"><a>work</a></Link></span> here
+            Mostly .NET and Angular things. 
         </p>
       </main>      
     </div>

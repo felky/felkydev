@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <img src="/face.png" alt="face of felkan" className="face"/>
         <h1>felix gramell</h1>
-        <Menu />
+        <p>fullstack developer @ <a href="https://bokadirekt.se">bokadirekt.se</a></p>
       </main>     
       <Footer /> 
     </div>
