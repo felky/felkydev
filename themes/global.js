@@ -119,6 +119,11 @@ h1, h2, h3, h4 {
     right: 0px; 
 }
 
+.linkedin {
+    height: 1.3rem;
+    filter: hue-rotate(170deg)
+}
+
 @media screen and (max-width: 600px) {
     .container {
         padding-top: 13rem;

@@ -38,10 +38,9 @@ function MyApp({ Component, pageProps }) {
             <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
                 <GlobalStyles />
             </ThemeProvider>
-            <Link href="/"><a className="homeButton" style={{textDecoration: 'none'}}>🏠</a></Link>
-            <Link href=""><a className="darkMode" onClick={toggleTheme} style={{textDecoration: 'none'}}>
-              { theme === "light" ? '🌛' : '🌞'}
-            </a></Link>
+            <Link href="/" className="homeButton" style={{textDecoration: 'none'}}>🏠</Link>
+            <Link href=""className="darkMode" onClick={toggleTheme} style={{textDecoration: 'none'}}>
+              { theme === "light" ? '🌛' : '🌞'}</Link>
       </div>
       <Component {...pageProps} />
     </div>

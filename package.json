@@ -8,9 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "eslint-config-next": "^13.4.19",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.26.9",
     "styled-components": "^5.1.1"
   }
