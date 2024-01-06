@@ -1,0 +1,29 @@
+div {
+    width: 20rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        margin-left: 2rem;
+        list-style: none;
+        font-family: 'Rakkas', cursive;
+
+        a {
+            text-decoration: none;
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
