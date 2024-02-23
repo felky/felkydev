@@ -18,5 +18,11 @@ export const routes: Routes = [
         loadComponent: () => import('./features/the-wheel/the-wheel.component').then(
             m => m.TheWheelComponent
         )
+    },
+    {
+        path: 'review',
+        loadComponent: () => import('./features/review/review.component').then(
+            m => m.ReviewComponent
+        )
     }
 ];

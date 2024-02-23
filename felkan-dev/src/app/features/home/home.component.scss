@@ -57,19 +57,18 @@ $synsam-orange: #ff5400;
     color: white;
     list-style-position: inside; 
     cursor: default;
-
-    & > a {
+    
+    a {
         color: $synsam-orange;
         cursor: pointer;
         text-decoration: none;
+        margin-top: 2px;
     }
-    
-    li {
-        &:hover {
-            color: $synsam-orange;
-            transition: font-size 0.3s;
-            font-size: 1.2rem;
-        }
+
+    a:hover {
+        color: $synsam-orange;
+        transition: font-size 0.3s;
+        font-size: 1.2rem;
     }
 
     -webkit-user-select: none; /* Safari */

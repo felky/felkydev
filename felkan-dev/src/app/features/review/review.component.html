@@ -1,0 +1,17 @@
+<div class="post-container">
+    @for (post of posts.posts; track  post.id){
+        <div class="post">
+            <div class="post-and-image">
+                <img src="{{ post.heroImage }}" alt="{{ post.title }}">
+                <h2>{{ post.title }}</h2>
+                <h2>{{ post.rating }}</h2>
+                <p>{{ post.date }}</p>
+            </div>
+            <div class="content">
+                @for(content of post.content; track content) {
+                    <p>{{ content }}</p>
+                }
+            </div>
+        </div>
+    }
+</div>
