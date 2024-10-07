@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="felix gramell | developer">
+	<main>
+		<img src="/felkan_chrome_bw.png" alt="felkan.dev" />
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: 0 auto;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		line-height: 1.6;
+		
+		img {
+			position: fixed;
+			margin-top: 12%;
+			margin-left: -5%;
+			width: 50%;
+			border-radius: 10px;
+		}
+	}
+
+	p {
+		font-size: 1rem;
+		text-align: center;
+		color: white;
+		font-family: 'Courier New', Courier, monospace;
+	}
+</style>
