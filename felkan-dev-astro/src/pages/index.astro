@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="felix gramell | developer">
 	<main>
-		<img src="/felkan_chrome_bw.png" alt="felkan.dev" />
+		<img src="/felkan_chrome_2.png" alt="felkan.dev" />
 	</main>
 </Layout>
 
@@ -21,6 +21,12 @@ import Layout from '../layouts/Layout.astro';
 			margin-left: -5%;
 			width: 50%;
 			border-radius: 10px;
+			filter: grayscale(100%);
+			transition: filter 0.5s ease;
+		}
+
+		img:hover {
+			filter: grayscale(0%);
 		}
 	}
 
@@ -31,3 +37,4 @@ import Layout from '../layouts/Layout.astro';
 		font-family: 'Courier New', Courier, monospace;
 	}
 </style>
+
