@@ -2,39 +2,210 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="felix gramell | developer">
-	<main>
-		<img src="/felkan_chrome_2.png" alt="felkan.dev" />
-	</main>
+<Layout title="Felix Gramell — Full Stack Developer">
+	<div class="page">
+
+		<aside class="left">
+			<div class="left-top">
+				<h1 class="name">Felix<br />Gramell</h1>
+				<div class="project">
+					<a href="https://intersections.felkan.dev" target="_blank" rel="noopener" class="project-link">intersections ↗</a>
+					<span class="project-note">a fun game</span>
+				</div>
+				<ul class="stack">
+					<li>c#, typescript, go</li>
+					<li>.net core, node.js, nestjs</li>
+					<li>angular, react, next.js</li>
+					<li>mssql, postgresql, redis</li>
+					<li>azure, kubernetes, docker</li>
+				</ul>
+			</div>
+			<a href="mailto:work@felkan.dev" class="email">work@felkan.dev</a>
+		</aside>
+
+		<div class="right">
+			<div class="jobs">
+
+				<article class="job">
+					<div class="job-top">
+						<strong>GISYS AB</strong>
+						<time>2026/present</time>
+					</div>
+					<span class="job-role">senior full stack developer</span>
+					<p>Angular modernization for patient pre-screening services across Region Stockholm.</p>
+				</article>
+
+				<article class="job">
+					<div class="job-top">
+						<strong>Arrowhead Game Studios</strong>
+						<time>2025/2026</time>
+					</div>
+					<span class="job-role">full stack developer</span>
+					<p>Backend services for Helldivers 2, 300K+ concurrent users. .NET Core, Azure, Kubernetes.</p>
+				</article>
+
+				<article class="job">
+					<div class="job-top">
+						<strong>Synsam</strong>
+						<time>2023/2025</time>
+					</div>
+					<span class="job-role">senior full stack developer</span>
+					<p>Led Angular/NgRx refactor across Scandinavia-wide retail platform. Owned Azure operations.</p>
+				</article>
+
+				<article class="job">
+					<div class="job-top">
+						<strong>Bokadirekt.se</strong>
+						<time>2022/2023</time>
+					</div>
+					<span class="job-role">full stack developer</span>
+					<p>Payment processing and secure integrations for high-volume booking flows.</p>
+				</article>
+
+				<article class="job">
+					<div class="job-top">
+						<strong>Synsam</strong>
+						<time>2021/2022</time>
+					</div>
+					<span class="job-role">junior full stack developer</span>
+					<p>Angular and .NET Core features on large-scale lifestyle platform.</p>
+				</article>
+
+				<article class="job">
+					<div class="job-top">
+						<strong>TryggMat</strong>
+						<time>2020</time>
+					</div>
+					<span class="job-role">software engineer intern</span>
+					<p>React Native iOS app during startup internship.</p>
+				</article>
+
+			</div>
+		</div>
+
+	</div>
 </Layout>
 
 <style>
-	main {
-		margin: 0 auto;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		line-height: 1.6;
-		
-		img {
-			position: fixed;
-			margin-top: 12%;
-			margin-left: -5%;
-			width: 50%;
-			border-radius: 10px;
-			filter: grayscale(100%);
-			transition: filter 0.5s ease;
-		}
-
-		img:hover {
-			filter: grayscale(0%);
-		}
+	.page {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 5rem;
+		padding: 3.75rem 4.5rem;
+		align-items: center;
 	}
 
-	p {
-		font-size: 1rem;
-		text-align: center;
-		color: white;
-		font-family: 'Courier New', Courier, monospace;
+	/* LEFT */
+	.left {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.left-top {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.name {
+		font-size: clamp(4.5rem, 7vw, 9rem);
+		font-weight: 700;
+		line-height: 0.88;
+		letter-spacing: -0.05em;
+		color: var(--text);
+	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		gap: 0.1rem;
+	}
+
+	.project-link {
+		font-size: 0.78rem;
+		color: var(--text);
+		text-decoration: none;
+		transition: color 0.2s;
+		width: fit-content;
+	}
+
+	.project-link:hover { color: var(--muted); }
+
+	.project-note {
+		font-size: 0.7rem;
+		color: var(--muted);
+	}
+
+	.email {
+		font-size: 0.72rem;
+		color: var(--muted);
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.email:hover { color: var(--text); }
+
+	.stack {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.stack li {
+		font-size: 0.72rem;
+		color: var(--muted);
+	}
+
+	/* RIGHT */
+	.right {
+		display: flex;
+		align-items: center;
+	}
+
+	.jobs {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+		width: 100%;
+	}
+
+	.job {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15rem;
+	}
+
+	.job-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 2rem;
+	}
+
+	.job-top strong {
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.job-top time {
+		font-size: 0.72rem;
+		color: var(--muted);
+		white-space: nowrap;
+	}
+
+	.job-role {
+		font-size: 0.78rem;
+		color: var(--muted);
+	}
+
+	.job p {
+		font-size: 0.775rem;
+		color: var(--muted);
+		line-height: 1.5;
+		margin-top: 0.1rem;
+		max-width: 56ch;
 	}
 </style>
-
