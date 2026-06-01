@@ -5,82 +5,20 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="felkan.dev">
 	<div class="page">
 
-		<aside class="left">
-			<div class="left-top">
-				<h1 class="name">Felix<br />Gramell</h1>
-				<div class="project">
-					<a href="https://intersections.felkan.dev" target="_blank" rel="noopener" class="project-link">intersections ↗</a>
-					<span class="project-note">a fun game</span>
-				</div>
-				<ul class="stack">
-					<li>c#, typescript, go</li>
-					<li>.net core, node.js, nestjs</li>
-					<li>angular, react, next.js</li>
-					<li>mssql, postgresql, redis</li>
-					<li>azure, kubernetes, docker</li>
-				</ul>
-			</div>
-			<a href="mailto:work@felkan.dev" class="email">work@felkan.dev</a>
-		</aside>
-
-		<div class="right">
-			<div class="jobs">
-
-				<article class="job">
-					<div class="job-top">
-						<strong>GISYS AB</strong>
-						<time>2026/present</time>
-					</div>
-					<span class="job-role">senior full stack developer</span>
-					<p>Angular modernization and backend work for patient pre-screening services across regions in Sweden.</p>
-				</article>
-
-				<article class="job">
-					<div class="job-top">
-						<strong>Arrowhead Game Studios</strong>
-						<time>2025/2026</time>
-					</div>
-					<span class="job-role">full stack developer</span>
-          <p>Backend services for Helldivers 2 with peaks of 300K+ concurrent users. Angular, .NET, Azure & Kubernetes.</p>
-				</article>
-
-				<article class="job">
-					<div class="job-top">
-						<strong>Synsam</strong>
-						<time>2023/2025</time>
-					</div>
-					<span class="job-role">senior full stack developer</span>
-					<p>Worked on major Angular + .NET Backend refactor across Scandinavia-wide retail platform.</p>
-				</article>
-
-				<article class="job">
-					<div class="job-top">
-						<strong>Bokadirekt.se</strong>
-						<time>2022/2023</time>
-					</div>
-					<span class="job-role">full stack developer</span>
-					<p>Payment processing and secure integrations for high-volume booking flows.</p>
-				</article>
-
-				<article class="job">
-					<div class="job-top">
-						<strong>Synsam</strong>
-						<time>2021/2022</time>
-					</div>
-					<span class="job-role">junior full stack developer</span>
-					<p>Angular and .NET Core features on large-scale lifestyle platform.</p>
-				</article>
-
-				<article class="job">
-					<div class="job-top">
-						<strong>TryggMat</strong>
-						<time>2020</time>
-					</div>
-					<span class="job-role">software engineer intern</span>
-					<p>React Native iOS app during startup internship.</p>
-				</article>
-
-			</div>
+		<div class="center">
+			<h1 class="name">Felix<br />Gramell</h1>
+      <div class="about">
+        <p>software developer, check out the stuff i've made!</p>
+      </div>
+			<div class="project">
+				<a href="https://intersections.felkan.dev" target="_blank" rel="noopener" class="project-link">intersections ↗</a>
+				<span class="project-note">solve the venn-diagram</span>
+      </div>
+      <br/>
+      <div class="contact">
+        <p>contact me:</p>
+			  <a href="mailto:work@felkan.dev" class="email">work@felkan.dev</a>
+      </div>
 		</div>
 
 	</div>
@@ -89,28 +27,27 @@ import Layout from '../layouts/Layout.astro';
 <style>
 	.page {
 		height: 100vh;
-		display: grid;
-		grid-template-columns: auto 1fr;
-		gap: 5rem;
-		padding: 3.75rem 4.5rem;
+		display: flex;
 		align-items: center;
-	}
+		justify-content: center;
+  }
 
-	/* LEFT */
-	.left {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.78rem;
+  }
+
+	.center {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		text-align: center;
 		gap: 1.5rem;
 	}
 
-	.left-top {
-		display: flex;
-		flex-direction: column;
-		gap: 1.25rem;
-	}
-
 	.name {
-		font-size: clamp(4.5rem, 7vw, 9rem);
+		font-size: clamp(4.5rem, 7vw, 4rem);
 		font-weight: 700;
 		line-height: 0.88;
 		letter-spacing: -0.05em;
@@ -121,6 +58,7 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 0.1rem;
+		align-items: center;
 	}
 
 	.project-link {
@@ -139,73 +77,11 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.email {
-		font-size: 0.72rem;
+		font-size: 0.7rem;
 		color: var(--muted);
 		text-decoration: none;
 		transition: color 0.2s;
 	}
 
 	.email:hover { color: var(--text); }
-
-	.stack {
-		list-style: none;
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
-	}
-
-	.stack li {
-		font-size: 0.72rem;
-		color: var(--muted);
-	}
-
-	/* RIGHT */
-	.right {
-		display: flex;
-		align-items: center;
-	}
-
-	.jobs {
-		display: flex;
-		flex-direction: column;
-		gap: 1.6rem;
-		width: 100%;
-	}
-
-	.job {
-		display: flex;
-		flex-direction: column;
-		gap: 0.15rem;
-	}
-
-	.job-top {
-		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
-		gap: 2rem;
-	}
-
-	.job-top strong {
-		font-size: 0.875rem;
-		font-weight: 600;
-	}
-
-	.job-top time {
-		font-size: 0.72rem;
-		color: var(--muted);
-		white-space: nowrap;
-	}
-
-	.job-role {
-		font-size: 0.78rem;
-		color: var(--muted);
-	}
-
-	.job p {
-		font-size: 0.775rem;
-		color: var(--muted);
-		line-height: 1.5;
-		margin-top: 0.1rem;
-		max-width: 56ch;
-	}
 </style>
